@@ -4,7 +4,7 @@ public class ConsoleChatObserver : IChatRoomObserver
 {
     public void Receive(ChatMessage message)
     {
-        Console.WriteLine(message.text);
+        Console.WriteLine($"[{message.nickname} : {message.text}]");
     }
 
     public void System(string text)
